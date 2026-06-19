@@ -21,6 +21,11 @@
     </div>
 
     <h2>Task List</h2>
+    <select id="statusFilter" onchange="filterTasks()">
+    <option value="All">All</option>
+    <option value="Pending">Pending</option>
+    <option value="Completed">Completed</option>
+</select>
 
     <table border="1">
 
@@ -30,7 +35,8 @@
     <th>Title</th>
     <th>Description</th>
     <th>Status</th>
-    <th>Action</th>
+<th>Created Date</th>
+<th>Action</th>
 </tr>
         </thead>
 
